@@ -1,0 +1,35 @@
+#header{
+    background: $purple-dark;
+    padding: 40px 0;
+    text-align: center;
+    @include d(s){
+        margin: 0 auto;
+    }
+    .logo a{
+        font-family: $font-2;
+        font-size: 1.5em; 
+        background-color: $blue-light;
+        padding: 20px;
+        border-radius: 100%;
+        text-align: center;   
+        color: $white;
+    }
+    nav{
+        flex: 1;
+        align-self: center;
+        ul{
+            display: flex;
+            float: right;
+        }
+        ul li{
+            font-family: $font-1;
+            font-size: 1.25em;
+        }
+        a{
+            color: $white;
+            margin-left: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

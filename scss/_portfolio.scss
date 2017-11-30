@@ -1,0 +1,18 @@
+#portfolio{
+    background: $purple-dark;
+    padding: 60px 0;
+    .pink{
+        background: $pink-light;
+    }
+    .purple{
+        background: $purple-light;
+    }
+    .card-full{
+        width: 100%;
+        border-radius: 15px;
+    }
+    .img-portfolio{
+        background: url('../img/brafe-2-img.png') no-repeat center;
+        background-size: cover;
+    }
+}

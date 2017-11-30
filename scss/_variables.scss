@@ -1,0 +1,48 @@
+//Font-Face
+@font-face {
+	font-family: 'Lobster 1.3';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Lobster 1.3'), url('../fonts/Lobster_1.3.woff') format('woff');
+}
+@font-face {
+    font-family: 'Brandon Grotesque Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Brandon Grotesque Light'), url('../fonts/brandon-grotesque-light-58a8a4b38001d.woff') format('woff');
+}
+
+//Colors
+$pink-light: #FF39FF;
+$green-light: #00FF6B;
+$blue-light: #819EED;
+$purple-light: #C259ED;
+$purple-dark: #423F49;
+$white: #ffffff;
+
+//Fonts
+$font-1: 'Brandon Grotesque Light',  Helvetica, Arial, sans-serif;
+$font-2: 'Lobster 1.3', cursive;
+
+//Media queries
+
+$l-device: 980px;
+$m-device: 740px;
+
+@mixin d($size) {
+	@if $size == l {
+		@media screen and (min-width: #{$l-device}) {
+			@content;
+		}
+	}
+	@else if $size == m {
+		@media screen and (min-width: #{$m-device}) and (max-width: #{$l-device} - 1) {
+			@content;
+		}
+	}
+	@else if $size == s {
+		@media screen and (max-width: #{$m-device} - 1) {
+			@content;
+		}
+	}
+}

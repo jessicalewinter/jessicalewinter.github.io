@@ -1,0 +1,19 @@
+#intro{
+    .text{
+       padding: 60px 0;
+        h1{
+            color: $purple-dark;
+            font-family: $font-2;
+            font-size: 3em;
+            line-height: 60px;
+        }
+        @include d(s){
+            margin: 0 auto;
+            text-align: center;
+        }
+        @include d(m){
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
